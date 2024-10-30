@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alumnos</title>
+</head>
+<body>
+    <h1 class="titulo-principal">Gestión de Alumnos</h1>
+
+    
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="fondopantala.mp4" type="video/mp4" >
+            Tu navegador no soporta la etiqueta video.
+        </video>
+    </div>
+    <div class="contenedor-curso">
+        <h2 class="titulo-formulario">Agregar Curso</h2>
+        <form action="" class="formulario-curso">
+            <label for="nombre-curso" class="label-curso">Nombre del curso</label>
+            <input type="text" id="nombre-curso" class="input-curso">
+
+            <label for="profesor-curso" class="label-curso">Profesor a cargo</label>
+            <input type="text" id="profesor-curso" class="input-curso">
+
+            <button type="button" class="boton-curso" id="agregar-curso">Agregar curso</button>
+        </form>
+    </div>
+
+    <div class="contenedor-estudiante">
+        <h2 class="titulo-formulario">Agregar Estudiante</h2>
+        <form action="" class="formulario-estudiante">
+            <label for="nombre-estudiante" class="label-estudiante">Nombre del estudiante</label>
+            <input type="text" id="nombre-estudiante" class="input-estudiante">
+
+            <label for="edad-estudiante" class="label-estudiante">Edad</label>
+            <input type="text" id="edad-estudiante" class="input-estudiante">
+
+            <label for="nota-estudiante" class="label-estudiante">Nota</label>
+            <input type="text" id="nota-estudiante" class="input-estudiante">
+
+            <label for="curso-estudiante" class="label-estudiante">Curso</label>
+            <input type="number" id="curso-estudiante" class="input-estudiante">
+
+            <button type="button" class="boton-estudiante" id="agregar-estudiante">Agregar estudiante</button>
+        </form>
+        <div class="reset-datos centrar-boton">
+            <button type="button" class="boton-reset-datos" id="reset-datos">Resetear Datos</button>
+        </div>
+        
+    </div>
+
+    <div class="mostrar-estudiantes">
+        <button type="button" class="boton-mostrar-estudiantes" id="mostrar-estudiantes">Mostrar Estudiantes</button>
+    </div>
+
+
+    <div class="contenedor-lista-estudiantes" id="lista-estudiantes"></div>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
+
